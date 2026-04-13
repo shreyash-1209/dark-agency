@@ -1,0 +1,39 @@
+// Version: 1.0.0
+type ContactSubmission__93684224 =
+  {
+    email : Text;
+    id : Text;
+    message : Text;
+    name : Text;
+    phone : Text;
+    serviceType : Text;
+    timestamp : Int
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type PortfolioProject__162501695 =
+  {
+    briefDescription : Text;
+    category : Text;
+    client : Text;
+    fullDescription : Text;
+    id : Text;
+    imageUrl : Text;
+    outcomes : Text;
+    techStack : [Text];
+    title : Text
+  };
+actor {
+  stable projects :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?PortfolioProject__162501695]];
+      var elementIndex : Nat__490723111
+    };
+  stable submissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactSubmission__93684224]];
+      var elementIndex : Nat__490723111
+    }
+};

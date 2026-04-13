@@ -1,0 +1,29 @@
+type PortfolioProject = 
+ record {
+   briefDescription: text;
+   category: text;
+   client: text;
+   fullDescription: text;
+   id: text;
+   imageUrl: text;
+   outcomes: text;
+   techStack: vec text;
+   title: text;
+ };
+type ContactSubmission = 
+ record {
+   email: text;
+   id: text;
+   message: text;
+   name: text;
+   phone: text;
+   serviceType: text;
+   timestamp: int;
+ };
+service : {
+  getContactSubmissions: () -> (vec ContactSubmission) query;
+  getPortfolioProjects: () -> (vec PortfolioProject) query;
+  getProjectById: (id: text) -> (opt PortfolioProject) query;
+  submitContact: (name: text, email: text, phone: text, message: text,
+   serviceType: text) -> (ContactSubmission);
+}

@@ -1,0 +1,23 @@
+{
+  "overview": "A dark-themed web agency template featuring a double carousel hero, bento-grid services, portfolio with modal previews and full detail pages, team, testimonials, FAQ, and a contact form that persists submissions.",
+  "features": [
+    "Double carousel hero section with animated panels and CTA",
+    "Bento-grid services section with hover animations",
+    "Portfolio grid with modal preview and full project detail pages",
+    "Category filters for portfolio with URL state persistence",
+    "Contact form with backend submission storage",
+    "Team, testimonials carousel, and FAQ accordion sections",
+    "Fully responsive dark theme throughout"
+  ],
+  "category": "agency-template",
+  "tags": [
+    "dark-theme",
+    "agency",
+    "portfolio",
+    "carousel",
+    "bento-grid",
+    "contact-form",
+    "landing-page"
+  ],
+  "last_updated": "2026-04-13T16:21:32.808Z"
+}
